@@ -62,18 +62,50 @@
 		C4743CBA23CF87E8005C15FC /* Traktor Team */ = {
 			isa = PBXGroup;
 			children = (
-				C4743CBB23CF87E8005C15FC /* AppDelegate.swift */,
-				C4743CBD23CF87E8005C15FC /* SceneDelegate.swift */,
-				C4743CC123CF87E8005C15FC /* Main.storyboard */,
+				C4743CDF23DAFEBE005C15FC /* Model */,
+				C4743CDE23DAFEAC005C15FC /* View */,
+				C4743CDD23DAFE68005C15FC /* Controller */,
+				C4743CE023DAFEDF005C15FC /* Support */,
+			);
+			path = "Traktor Team";
+			sourceTree = "<group>";
+		};
+		C4743CDD23DAFE68005C15FC /* Controller */ = {
+			isa = PBXGroup;
+			children = (
 				C4743CDB23D8CF02005C15FC /* PlayerViewController.swift */,
 				C4743CD123CF8C60005C15FC /* PlayerCell.swift */,
 				C4743CCF23CF8C32005C15FC /* TeamViewController.swift */,
-				C4743CD323D0DD86005C15FC /* Player.swift */,
-				C4743CC423CF87F2005C15FC /* Assets.xcassets */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		C4743CDE23DAFEAC005C15FC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C4743CC123CF87E8005C15FC /* Main.storyboard */,
 				C4743CC623CF87F2005C15FC /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C4743CDF23DAFEBE005C15FC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C4743CD323D0DD86005C15FC /* Player.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C4743CE023DAFEDF005C15FC /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				C4743CBB23CF87E8005C15FC /* AppDelegate.swift */,
+				C4743CBD23CF87E8005C15FC /* SceneDelegate.swift */,
+				C4743CC423CF87F2005C15FC /* Assets.xcassets */,
 				C4743CC923CF87F2005C15FC /* Info.plist */,
 			);
-			path = "Traktor Team";
+			path = Support;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -298,7 +330,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7TUNQ9UT9C;
-				INFOPLIST_FILE = "Traktor Team/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Traktor Team/Support/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -316,7 +348,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7TUNQ9UT9C;
-				INFOPLIST_FILE = "Traktor Team/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Traktor Team/Support/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
